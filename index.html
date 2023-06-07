@@ -1,0 +1,212 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/style.css">
+        
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/css/uikit.min.css" />
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit-icons.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Kavish Gunnoo - reference -> UIKit</title>
+    </head>
+    <body>
+        <section id="home" style="height: 100vh;">
+            <nav uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
+                class="uk-navbar-container uk-navbar-transparent">
+                <div class="uk-container">
+                    <div uk-navbar>
+                        <div class="uk-navbar-left">
+                            <a class="uk-navbar-item uk-logo"  aria-label="Back to Home">
+                                <img src="/Images/lilac_valley_white.png" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-right uk-visible@m">
+                            <ul class="uk-navbar-nav">
+                                <li><a class="navbar-nav" href="#home">Home</a></li>
+                                <li><a class="navbar-nav" href="#about">About Us</a></li>
+                                <li><a class="navbar-nav" href="#services">Services</a></li>
+                                <li><a class="navbar-nav" href="#portfolio">Gallery</a></li>
+                                <li><a class="navbar-nav" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-navbar-right uk-hidden@m">
+                            <!-- This button and off-canvas menu are only visible on screens smaller than 'm' -->
+                            <a class="uk-navbar-toggle" href="#" uk-toggle="target: #ofcanvasNav">
+                                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="ofcanvasNav" class="uk-offcanvas" uk-offcanvas>
+                    <div class="uk-offcanvas-bar">
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="uk-position-center uk-text-center uk-text-primary" >
+                <h1 style="color:white">LILAC VALLEY</h1>
+                <h4 style="color:white">Your Dream Barn Home</h4>
+            </div>
+        </section>
+        <section id="about" class="uk-section">
+
+            <div class="uk-container">
+                <div class="uk-grid-large" uk-grid>
+                    <div class="uk-width-1-3@m uk-responsive-width">
+                        <img  src="/Images/lilac_valley.png" alt="About me" class="uk-border-rounded" >
+                    </div>
+                    <div class="uk-width-2-3@m">
+                        <h2 style="color: #da8e00" class="uk-heading-line"><span>About Us</span></h2>
+                        <p>Lilac Valley Stay is a simple, rustic farm stay accommodation in the hills of the Blue Mountains. The property is owned by Marina Ye, a local interior designer who purchased the old rundown barn three years ago with a plan to renovate. After years of hard work, the property now features a beautiful restored, open plan, luxury barn house on four acres of land home to sheep, chickens, ducks and one very friendly goat named rosie. </p>
+                        <p>There is an outdoor plunge pool just off the back verandah and a stunning cottage garden. The Lilac Valley Farm Stay has been incredibly popular on AirBnB, and was even featured in a handful of online articles.</p>
+                        
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        <section id="services" class="uk-section uk-section-default">
+            <div class="uk-container">
+                <h3 class="uk-heading-medium uk-text-center" style="color: #da8e00">Services</h3>
+                <div class="uk-child-width-1-3@m uk-grid-match uk-grid-small uk-margin-top" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                            <span class="uk-margin-bottom" uk-icon="icon: check; ratio: 3"></span>
+                            <h3 class="uk-card-title">Dry Cleaning</h3>
+                            <p class="uk-text-muted">We offer dry cleaning services as part of our accomodation to help ease our customers.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                            <span class="uk-margin-bottom" uk-icon="icon: check; ratio: 3"></span>
+                            <h3 class="uk-card-title">Room Service</h3>
+                            <p class="uk-text-muted">From 10:00 - 20:00, we provide room services whether to clean your rooms / barn while you are out or order food and drinks that can be delivered.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                            <span class="uk-margin-bottom" uk-icon="icon: check; ratio: 3"></span>
+                            <h3 class="uk-card-title">Luggage Storage</h3>
+                            <p class="uk-text-muted">We provide extra storage which is remote to our customers if they need additional space for their luggage.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                            <span class="uk-margin-bottom" uk-icon="icon: check ; ratio: 3"></span>
+                            <h3 class="uk-card-title">Restaurant</h3>
+                            <p class="uk-text-muted">We have a restaurant with a vareity in terms of food choice which we SMS our customers on a daily to keep them informed.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                            <span class="uk-margin-bottom" uk-icon="icon: check ; ratio: 3"></span>
+                            <h3 class="uk-card-title">Bar</h3>
+                            <p class="uk-text-muted">Right next to our restaurant, we have an open bar for those who enjoy a drink or two to accompany their warm meals.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                            <span class="uk-margin-bottom" uk-icon="icon: check ; ratio: 3"></span>
+                            <h3 class="uk-card-title">Pet Friendly</h3>
+                            <p class="uk-text-muted">Our barn accomodations are mostly known for our pet friendly customs where we entertain multiple animals to play and do activities in our park.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="uk-section">
+            <div class="uk-container">
+                <h2 style="color:#fff" class="uk-heading-medium uk-text-center">Gallery</h2>
+                <div class="uk-grid uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="/Images/1.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title"><b>Basic Package</b></h3>
+                                <p>This package entails a simple bed and breackfast accomodation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="/Images/2.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title"><b>Premium Package</b></h3>
+                                <p>This package entails a breakfast and dinner accomodation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="/Images/3.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title"><b>All Inclusive</b></h3>
+                                <p>This package entails that all your meals and activities are covered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="uk-section uk-section-muted">
+            <div class="uk-container">
+                <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59924.89591680916!2d57.4967765!3d-20.16298105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c504941d601ef%3A0xfdc5186c91bdbb3d!2sPort%20Louis!5e0!3m2!1sen!2smu!4v1686136953161!5m2!1sen!2smu" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="color:#fff" class="uk-heading-medium uk-text-center uk-margin-bottom">Get in Touch</h2>
+                        <form class="uk-form-stacked">
+                            <div class="uk-margin">
+                                <label style="color:#000000" class="uk-form-label" for="name"><b>Name</b></label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="name" type="text" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label style="color:#000000" class="uk-form-label" for="email"><b>Email</b></label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="email" type="email" placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label style="color:#000000" class="uk-form-label" for="message"><b>Message</b></label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" id="message" rows="5"
+                                        placeholder="Enter your message"></textarea>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <button class="uk-button uk-button-primary uk-width-1-1">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer" class="uk-section uk-section-secondary uk-text-center">
+            <div  class="uk-container">
+                <p>&copy; CTI Assignment 2023. All Rights Reserved. Designed by Kavish Gunnoo </p>
+            </div>
+        </footer>
+    </body>
+    <script src="/Js/main.js"></script>
+</html>
